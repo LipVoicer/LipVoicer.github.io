@@ -8,36 +8,26 @@
     <title>LipVoicer</title>
     
     <meta name="description" content="Project Page for LipVoicer">
+    
     <meta name="author" content="">
-<link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
     
     <link rel="stylesheet" href="css/fontawesome.all.min.css">
     <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">  
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'> -->
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
 </head>
 
 <!-- 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="ReVISE">
-  <meta property="og:title" content="ReVISE"/>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">    
   
-  <title>ReVISE</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">    
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -58,70 +48,86 @@
 </head> -->
 
 <body>
-
-<div id="about">
-
+  
   <div class="container">
 
     <div class="section-title text-center center">
-      <h1 style="color:black"><strong>LipVoicer: Generating Speech from Silent Videos <br> Guided by Lip Reading</b><strong></h1> <hr>
+        <h1 style="color:black"><strong><br><br> LipVoicer: Generating Speech from Silent Videos <br> Guided by Lip Reading</b><strong></h1> 
     </div>
+
+    <div class="portfolio-item"> 
+        <img style="border:0px solid black;" src="img/method.png" class="img-responsive" alt="method"><br><br>
+    </div> 
 
     <div class="row">
       
-      <div class="col-md-12 text-center">
-        <img src="img/placeholder.jpg" class="img-responsive">
-      </div>
+          <div class="col-md-10 col-md-offset-1">
 
-      <div class="col-md-8 col-md-offset-2">
-            <div class="about-text">
-                <p style="color:black;">                         
+                <p style="color:black; font-family:Sans-Serif; font-size:19px">                         
                   Lip-to-speech involves generating a natural-sounding audio synchronized with a soundless video of a person talking. Despite recent advances, current methods still cannot produce high-quality speech with high levels of intelligibility  for challenging and realistic datasets such as LRS3.
 
                   In this work, we present LipVoicer, a novel method that generates high-quality speech, even for in-the-wild and rich datasets,  by incorporating the text modality. Given a silent video, we first predict the spoken text using a pre-trained lip-reading network. We then condition a diffusion model on the video, and use the extracted text through a classifier-guidance mechanism to produce the natural underlying mel-spectrogram, where an automatic speech recognition system (ASR) serves as the classifier.
 
                   LipVoicer outperforms multiple lip-to-speech baselines on LRS3 and LRS2, which are in-the-wild datasets with hundreds of identities and an unrestricted vocabulary. Moreover, our experiments show that the inclusion of the text modality plays a major role in the quality and intelligibility measures, as well as in the reduction of word error rate (WER) metric of the generated speech. Finally, we demonstrate the effectiveness of LipVoicer through human evaluation, which shows that it produces more natural and synchronized speech signals compared to competing methods.
-                </p> 
-            </div>
-        </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div id="portfolio">
-  
-  <!-- <div class="container"> -->
- 
-    <div class="section-title text-center center"> 
+                </p> <br><hr><br>
       
-      <!-- <div class="col-md-8 col-md-offset-2"> -->
-      <!-- <div class="categories">
+          </div>
+    </div>
 
-        <div class="clearfix"></div>
-        <div align=left><h1 style="color:black;">TEXT</h1></div>
-      </div> -->
+  </div>
+<!-- </div> -->
 
-    Baseline methods on LRS3 dataet 
-    <!-- GT, OURS, The rest  -->
-    <!-- SVTS, VCGAN - sound the same -->
 
-    <table border=0 justify="center" cellpadding="20px" style="width: 90%">
+<!-- <div id="portfolio"> -->
+  
+  <div class="container">
+    <div class="col-md-8 col-md-offset--8">
+    <!-- <div class="section-title text-center center">  -->
+      <p style="color:black; font-family:Sans-Serif; font-size:15px"> <h2> LRS3 Dataset </p><br><br></h2> </p>
+      <!-- <p style="color:black; text-align: left"> <h3><b> LRS3 Dataset </b> </h3> </p><br><br> -->
+    
+    <table border=1 justify="center" cellpadding="20px" style="width: 100%">
       <tr>
-        <td style="width: 20%; text-align: center; padding: 10px; color:black"></td>
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">Ground-Truth</td>
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">Lip2Speech</td>
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">VCA-GAN</td>
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">SVTS</td>
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">Ours </td>
+        <!-- <th style="position: sticky; top: 0; width: 20%; text-align: center; padding: 10px; color:black"></th> -->
+          <th style=" background-color:white;position: sticky; top: 0; width: 20%; text-align: center; padding: 10px; color:black">Ground-Truth</th>
+          <th style=" background-color:white; position: sticky; top: 0;width: 20%; text-align: center; padding: 10px; color:black">Ours </th>
+          <th style="background-color:white;position: sticky; top: 0;width: 20%; text-align: center; padding: 10px; color:black">Lip2Speech</th>
+          <th style="background-color:white;position: sticky; top: 0;width: 20%; text-align: center; padding: 10px; color:black">VCA-GAN</th>
+          <th style="background-color:white;position: sticky; top: 0;width: 20%; text-align: center; padding: 10px; color:black">SVTS</th>
       </tr>
 
       <tr>
-        <td style="width: 20%; text-align: center; padding: 10px; color:black"></td>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/V1yW5IsnSjo_00003.webm" type="video/webm"></video></td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
+          </td>
+    </tr>
+
+      <tr>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
 
         <td style="width: 20%; text-align: center; padding: 10px; color:black">
           <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/aoGJP02CtPA_00003.webm" type="video/webm"></video></td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/aoGJP02CtPA_00003.webm" type="video/webm"></video>
+          </td>
 
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
             <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/aoGJP02CtPA_00003.webm" type="video/webm"></video>
@@ -134,40 +140,17 @@
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
             <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/aoGJP02CtPA_00003.webm" type="video/webm"></video>
           </td>
-
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">
-            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/aoGJP02CtPA_00003.webm	" type="video/webm"></video>
-          </td>
       </tr>
       
       <tr>
-          <td style="width: 20%; text-align: center; padding: 10px; color:black"></td>
-
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">
-            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/V1yW5IsnSjo_00003.webm" type="video/webm"></video></td>
-
-            <td style="width: 20%; text-align: center; padding: 10px; color:black">
-              <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
-            </td>
-
-            <td style="width: 20%; text-align: center; padding: 10px; color:black">
-              <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
-            </td>
-
-            <td style="width: 20%; text-align: center; padding: 10px; color:black">
-              <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/V1yW5IsnSjo_00003.webm" type="video/webm"></video>
-            </td>
-
-            <td style="width: 20%; text-align: center; padding: 10px; color:black">
-              <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/V1yW5IsnSjo_00003.webm	" type="video/webm"></video>
-            </td>
-      </tr>
-
-      <tr>
-        <td style="width: 20%; text-align: center; padding: 10px; color:black"></td>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
 
         <td style="width: 20%; text-align: center; padding: 10px; color:black">
           <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/NqOjj1FCcVY_00001.webm" type="video/webm"></video></td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/NqOjj1FCcVY_00001.webm" type="video/webm"></video>
+          </td>
 
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
             <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/NqOjj1FCcVY_00001.webm" type="video/webm"></video>
@@ -180,18 +163,19 @@
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
             <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/NqOjj1FCcVY_00001.webm" type="video/webm"></video>
           </td>
-
-          <td style="width: 20%; text-align: center; padding: 10px; color:black">
-            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/NqOjj1FCcVY_00001.webm	" type="video/webm"></video>
-          </td>
       </tr>
 
 
       <tr>
-        <td style="width: 20%; text-align: center; padding: 10px; color:black"></td>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
 
         <td style="width: 20%; text-align: center; padding: 10px; color:black">
-          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/4n8qT0vQbWk_00001.webm" type="video/webm"></video></td>
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/4n8qT0vQbWk_00001.webm" type="video/webm"></video>
+        </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/4n8qT0vQbWk_00001.webm	" type="video/webm"></video>
+          </td>
 
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
             <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/4n8qT0vQbWk_00001.webm" type="video/webm"></video>
@@ -204,15 +188,154 @@
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
             <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/4n8qT0vQbWk_00001.webm" type="video/webm"></video>
           </td>
+      </tr>
+
+      <tr>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/NL0uxDscjdo_00004.webm" type="video/webm"></video>
+        </td>
 
           <td style="width: 20%; text-align: center; padding: 10px; color:black">
-            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/4n8qT0vQbWk_00001.webm	" type="video/webm"></video>
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/NL0uxDscjdo_00004.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/NL0uxDscjdo_00004.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/NL0uxDscjdo_00004.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/NL0uxDscjdo_00004.webm" type="video/webm"></video>
           </td>
       </tr>
 
+      <tr>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/xTkKSJSqUSI_00008.webm" type="video/webm"></video>
+        </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/xTkKSJSqUSI_00008.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/xTkKSJSqUSI_00008.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/xTkKSJSqUSI_00008.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/xTkKSJSqUSI_00008.webm" type="video/webm"></video>
+          </td>
+      </tr>
 
       <tr>
-          <td width=20%></td>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/Jm2dWbNsnZI_00002.webm" type="video/webm"></video>
+        </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/Jm2dWbNsnZI_00002.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/Jm2dWbNsnZI_00002.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/Jm2dWbNsnZI_00002.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/Jm2dWbNsnZI_00002.webm" type="video/webm"></video>
+          </td>
+      </tr>
+
+      <tr>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/27lMmdmySb8_00008.webm" type="video/webm"></video>
+        </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/27lMmdmySb8_00008.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/27lMmdmySb8_00008.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/27lMmdmySb8_00008.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/27lMmdmySb8_00008.webm" type="video/webm"></video>
+          </td>
+      </tr>
+
+      <tr>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/0VJqrlH9cdI_00002.webm" type="video/webm"></video>
+        </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/0VJqrlH9cdI_00002.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/0VJqrlH9cdI_00002.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/0VJqrlH9cdI_00002.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/0VJqrlH9cdI_00002.webm" type="video/webm"></video>
+          </td>
+      </tr>
+
+      <tr>
+        <!-- <td style="width: 20%; text-align: center; padding: 10px; color:black"></td> -->
+
+        <td style="width: 20%; text-align: center; padding: 10px; color:black">
+          <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/gt/VfAiNX7jn9A_00010.webm" type="video/webm"></video>
+        </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/generated_mels_ma_with_pretrain/VfAiNX7jn9A_00010.webm	" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/lip2speech/VfAiNX7jn9A_00010.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/vcagan/VfAiNX7jn9A_00010.webm" type="video/webm"></video>
+          </td>
+
+          <td style="width: 20%; text-align: center; padding: 10px; color:black">
+            <video width="250" controls><source src="https://chechiklab.biu.ac.il/~avivshamsian/lipvoicer/svts/VfAiNX7jn9A_00010.webm" type="video/webm"></video>
+          </td>
+      </tr>
+
+      <tr>
+          <!-- <td width=20%></td> -->
           <td width=20%></td>
           <td width=20%></td>
           <td width=20%></td>
@@ -231,12 +354,6 @@
 </div>
 
 
-<!-- <div id="footer">
-  <div class="container text-center">
-    <div class="fnav">
-    </div>
-  </div>
-</div> -->
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
