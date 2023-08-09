@@ -53,13 +53,12 @@
         <div style="width:700px; margin:0 auto;">
             <p align="left" style="color:black; font-family:Sans-Serif; font-size:14px;"> 
                 Using intrusive measures like PESQ and STOI in our problem is fundamentally incorrect as they cannot differentiate between another valid speaker and added noise. 
-                We Show this in the following experiment: We took a speech signal $x$ and created two versions of it. 
-                One is <code> y=x+n </code>, where <code> n</code> is a Gaussian noise with SNR=5dB. Second is <code> z </code>, 
-                output of a voice conversion system where the input is <code> x </code>. 
-                In other words, <code> z </code> is identical to <code> x </code>  with respect to the spoken words and their timing, 
-                but with a different yet fairly close voice. 
-                We computed the five metrics and received the results below. 
-                The intrusive metrics consider the voice converted version as equivalent to the highly noisy signal <code> y </code>, which is obviously wrong.
+                We Show this in the following experiment: We took a speech signal <code>x</code> and created two versions of it. 
+                One is <code>y=x+n</code>, where <code>n</code> is a Gaussian noise with SNR=5dB. Second is <code>z</code>, 
+                output of a voice conversion system where the input is <code>x</code>. 
+                In other words, <code>z</code> is identical to <code>x</code>  with respect to the spoken words and their timing, 
+                but with a different yet fairly close voice. We computed the five metrics and received the results below. 
+                The intrusive metrics consider the voice converted version as equivalent to the highly noisy signal <code>y</code>, which is obviously wrong.
             </p><br>
         </div>
           
@@ -76,15 +75,15 @@
                     <td style="text-align: center; padding: 10px; color:black">DNS-MOS</td>
                 </tr>
                 <tr>
-                    <td style="text-align: center; padding: 10px; color:black">Clean</td>
-                    <td style="text-align: center; padding: 10px; color:black">- </td>
-                    <td style="text-align: center; padding: 10px; color:black">-</td>
-                    <td style="text-align: center; padding: 10px; color:black">- </td>
+                    <td style="text-align: center; padding: 10px; color:black">Clean (<code> x </code>) </td>
+                    <td style="text-align: center; padding: 10px; color:black"> - </td>
+                    <td style="text-align: center; padding: 10px; color:black"> - </td>
+                    <td style="text-align: center; padding: 10px; color:black"> - </td>
                     <td style="text-align: center; padding: 10px; color:black">0.86</td>
                     <td style="text-align: center; padding: 10px; color:black">3.31</td>
                 </tr>
                 <tr>
-                    <td style="text-align: center; padding: 10px; color:black">Noisy</td>
+                    <td style="text-align: center; padding: 10px; color:black">Noisy  (<code> y </code>) </td>
                     <td style="text-align: center; padding: 10px; color:black">1.38</td>
                     <td style="text-align: center; padding: 10px; color:black">0.74</td>
                     <td style="text-align: center; padding: 10px; color:black">0.52</td>
@@ -92,7 +91,7 @@
                     <td style="text-align: center; padding: 10px; color:black">2.45</td>
                 </tr>
                 <tr>
-                    <td style="text-align: center; padding: 10px; color:black"> Cloned </td>
+                    <td style="text-align: center; padding: 10px; color:black"> Cloned (<code> z </code>) </td>
                     <td style="text-align: center; padding: 10px; color:black">1.14</td>
                     <td style="text-align: center; padding: 10px; color:black">0.76</td>
                     <td style="text-align: center; padding: 10px; color:black">0.56</td>
