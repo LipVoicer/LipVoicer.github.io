@@ -49,7 +49,14 @@
     
         
         <p style="color:black; font-family:Sans-Serif; font-size:24px;"> PESQ </p>
-        
+          
+        <div style="width:700px; margin:0 auto;">
+            <p align="left" style="color:black; font-family:Sans-Serif; font-size:14px;"> 
+                Using intrusive measures like PESQ and STOI in our problem is fundamentally incorrect as they cannot differentiate between another valid speaker and added noise. 
+                We Show this in the following experiment: We took a speech signal $x$ and created two versions of it. One is <span class="math inline">\(y=x+n\)</span>, where <span class="math inline">\(n\)</span> is a Gaussian noise with SNR=5dB. Second is <span class="math inline">\(z\)</span>, output of a voice conversion system where the input is <span class="math inline">\(x\)</span>. In other words, <span class="math inline">\(z\)</span> is identical to <span class="math inline">\(x\)</span>  with respect to the spoken words and their timing, but with a different yet fairly close voice. We computed the five metrics and received the results below. The intrusive metrics consider the voice converted version as equivalent to the highly noisy signal <span class="math inline">\(y\)</span>, which is obviously wrong.
+            </p><br>
+        </div>
+          
         <div style="width:500px; margin:0 auto;">
 
             <table border="1" justify="center" style="width: 100%">
